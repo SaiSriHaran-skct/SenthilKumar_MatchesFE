@@ -1,28 +1,30 @@
 .main-footer {
   margin-top: 10px;
+  width: 100vw !important;
   padding: 0;
   background: #020e27;
   color: white;
   height: 50vh;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding-top: 2rem;
 }
+
 .footer-1,
 .footer-2,
 .footer-3,
 .footer-4 {
-  width: 30%;
-  margin: 10px;
+  margin-left: 30px;
 }
 
 @media only screen and (max-width: 768px) {
   .main-footer {
     display: flex;
     justify-content: space-between;
+    width: 100vw;
     height: max-content;
   }
+
   .footer-1,
   .footer-2,
   .footer-3,
