@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+.navheader {
+  background-color: #020e27;
+  position: sticky !important;
+}
+.nav_bar {
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --pink: #fecb6a;
+}
+.logo {
+  padding: 0px;
+  margin: 0px;
+}
+.navele {
+  display: flex;
+  color: white !important;
+}
+
+@media only screen and (min-width: 992px) {
+  .navele {
+    position: relative;
+    transition: all ease-in-out 250ms;
+  }
+  .navele::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 0.2em;
+    width: 0%;
+    background-color: var(--pink);
+    bottom: -2px;
+    transition: all ease-in-out 250ms;
+  }
+  .navele:hover::after {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navele {
+    position: relative;
+    transition: all ease-in-out 250ms;
+  }
+  .navele::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 0.2em;
+    width: 0%;
+    background-color: var(--pink);
+    bottom: -2px;
+    transition: all ease-in-out 250ms;
+  }
+  .navele:hover::after {
+    width: 100%;
+  }
+}
